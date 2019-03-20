@@ -1,0 +1,48 @@
+// body background
+@mixin bodybg ($color1) {
+    background-color: $color1;
+}
+.body {
+    @include bodybg (white)
+}
+//Main grid
+@mixin gridprop ($height,$width)
+    {
+        height:$height;
+        width: $width;
+    }
+.grid
+{
+  @include gridprop (100%,100%)
+}
+
+// Title
+.searchimg {
+    background: url('images/search.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    width:40px;
+    height:18px;
+}
+
+// First image
+.image1
+{
+  background-image:url('images/MarineLePen.jpg');
+  background-repeat:no-repeat;
+  width:720px;
+  height:400px;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  position:relative;
+
+  .textheading{
+    position: absolute;
+    bottom: 5px;
+    // left: 20px;
+    background-color:red;
+    color: white;
+    width:720px;
+}
+}

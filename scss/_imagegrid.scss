@@ -1,0 +1,96 @@
+// Image grid for 4 images
+.image-grid
+{
+  display:grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 325px;
+  grid-column-gap: 20px;
+}
+
+@mixin image2info
+{
+  
+  width:250px;
+  height:50px;
+  margin-left:0px;
+  margin-top:150px;
+  border-collapse: collapse;
+
+}
+
+.image2
+{
+  background-image:url('images/QatarSaudi.jpg');
+  background-repeat:no-repeat;
+  width:250px;
+  height:$height1;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  @include image2info;
+}
+
+
+@mixin image4info{
+    
+  width:$width1;
+  height:75px;
+  margin-left:0px;
+  margin-top:150px;
+  
+}
+.image4
+{
+  background-image:url('images/DavidCassidy.jpg');
+  background-repeat:no-repeat;
+  width:300px;
+  height:$height1;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  @include image4info;
+}
+
+@mixin image3info{
+
+  width:$width1;
+  height:75px;
+  margin-left:0px;
+  margin-top:150px;
+
+}
+
+
+.image3
+{
+  background-image:url('images/RexTillerson.jpg');
+  background-repeat:no-repeat;
+  margin-left:20px;
+  width:300px;
+  height:$height1;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  @include image3info;
+}
+
+@mixin image5info
+{
+
+  width:$width1;
+  height:75px;
+  margin-left:0px;
+  margin-top:150px;
+}
+
+.image5{
+  background-image:url('images/AngelaMerkel.jpg');
+  background-repeat:no-repeat;
+  margin-left:20px;
+  width:300px;
+  height:$height1;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  @include image5info;
+}

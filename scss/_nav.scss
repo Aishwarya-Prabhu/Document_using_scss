@@ -1,0 +1,84 @@
+// Page header
+.header
+{
+  display:grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.date
+{
+  border-bottom:1px black transparent;
+}
+
+.date1 {
+    background-color: black;
+    float:left;
+    padding-right:10px;
+
+}
+.date2 {
+    background-color:red;
+    float:left;
+    padding-left:10px;
+}
+.link
+{
+  text-align:right;
+  border-left:1px solid map-get($colors,common-color);
+  border-bottom:1px map-get($colors,common-color) solid;
+
+}
+
+.heading
+{
+
+  border-bottom:1px map-get($colors,common-color) solid;
+  padding-left:25px;  
+}
+
+.title
+{
+ border-left:1px solid map-get($colors,common-color);
+ border-bottom:1px map-get($colors,common-color) solid;
+ padding-left:100px;
+ padding-top:10px;
+
+}
+.search {
+    background-image: url('images/search.png');
+    border-left:1px solid map-get($colors,common-color);
+    width:30px;
+    height:30px;
+    float:left;
+    margin-left: 80%;
+    padding-left:10px;
+    padding-top :0px;
+
+}
+// Page footer
+.footer1{
+    display:grid;
+    height:50px;
+    width:available;
+    display:grid;
+    margin-top: 30%;
+    grid-template-rows: 1fr ;
+    background-color: #303030;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding-left:400px;
+    padding-right:200px;
+}
+.footer2{
+    display:grid;
+    height:50px;
+    width:available;
+    display:grid;
+    grid-template-rows: 1fr;
+    background-color: #505050;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding-left:400px;
+    padding-right:200px;
+}

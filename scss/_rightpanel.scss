@@ -1,0 +1,141 @@
+// Table1
+.table1
+{
+    width: 400px;
+    height:200px;
+    float:left;
+    margin-left:850px;
+    margin-top:30px;
+    border: $border;
+    
+
+}
+//Table 2 
+.table2
+{
+    width: 400px;
+    height:300px;
+    float:left;
+    margin-left:925px;
+    margin-top:-327px;
+    border: $border;
+    display: grid;
+
+    @include table2spec;
+}
+
+@mixin table2spec {
+    table2heading
+{
+    padding-left:70px;
+}
+
+table2border1 {
+    border-bottom:$border1;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:300px;
+
+}
+table2border2 {
+    border-bottom:$border1;
+    margin-left:50px;
+    margin-top:265px;
+    margin-right: -50px;
+
+}
+table2content{
+    width:$width1;
+    height:200px;
+    margin-top:-350px;
+}
+table2left {
+
+    width:100px;
+    height :90px;
+    margin-top:70px;
+    padding-left:5px;
+    float:left;
+
+}
+table2right {
+    width : 185px;
+    height: 90px;
+    float:left;
+    margin-top:-63px;
+    margin-left:145px;
+    padding-left:10px;
+    padding-bottom:10px;
+
+}
+ table2bottom{
+    padding-left:100px;
+}
+}   
+
+
+
+
+// Table 3
+.table3
+{
+    width: 400px;
+    height:300px;
+    float:left;
+    margin-left:923px;
+    margin-top:-319px;
+    border: $border;
+    display: grid;
+
+    @include table3spec;
+}
+@mixin table3spec {
+table3heading
+{
+    padding-left:70px;
+}
+
+table3border1 {
+    border-bottom:$border1;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:300px;
+
+}
+table3border2 {
+    border-bottom:$border1;
+    margin-left:50px;
+    margin-top:265px;
+    margin-right: -50px;
+
+}
+table3content{
+    width:$width1;
+    height:200px;
+    margin-top:-350px;
+}
+table3left {
+
+    width:100px;
+    height :90px;
+    margin-top:70px;
+    padding-left:5px;
+    float:left;
+
+}
+table3right {
+    width : 185px;
+    height: 90px;
+    float:left;
+    margin-top:-63px;
+    margin-left:145px;
+    padding-left:10px;
+    padding-bottom:10px;
+
+}
+table3bottom{
+    padding-left:100px;
+}
+
+}
+

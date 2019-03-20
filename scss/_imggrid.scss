@@ -1,0 +1,89 @@
+// 3 image grid at the bottom for tech(bottom1) , health(bottom2) and business(bottom3) 
+.image-right {
+    margin-left: 80%;
+    height : 1000px;
+    display: grid;
+    border:$border;
+}
+
+.image-bottom
+{
+  display:grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 400px;
+  grid-column-gap: 20px;
+  
+}
+
+.spec {
+    height:$height1;
+  margin-left:70px;
+  margin-top:40px;
+  border:$border;
+  padding: 5px;
+  float:left;
+
+}
+
+.bottom1
+{
+  background-image:url('images/Tech.jpg');
+  background-repeat:no-repeat;
+  width:250px;
+  padding-left: 100px;
+  
+   @extend .spec;
+
+  @include bottom1infor;
+}
+@mixin bottom1infor
+{
+  bottom1info
+    {
+    width:$width1;
+    height:75px;
+    margin-left:-100px;
+    margin-top:175px;
+
+    
+    }
+}
+
+.bottom2
+{
+  background-image:url('images/health.jpg');
+  background-repeat:no-repeat;
+  width:$width1;
+  @extend .spec;
+  @include bottom1infor;
+}
+@mixin bottom2infor
+{
+  bottom2info
+    {
+        width:$width1;
+        height:75px;
+        margin-left:-6px;
+        margin-top:175px;
+    }
+}
+
+
+.bottom3
+{
+  background-image:url('images/business.jpg');
+  background-repeat:no-repeat;
+  width:$width1;
+  @extend .spec;
+  @include bottom3infor;
+}
+@mixin bottom3infor
+{
+  bottom3info
+{
+    width:$width1;
+    height:75px;
+    margin-left:-12px;
+    margin-top:175px;
+}
+}
